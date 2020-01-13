@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Sapper_Game"
   ],
+  "SelectedNode": "\\Sapper_Game\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
