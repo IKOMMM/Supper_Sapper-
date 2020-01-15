@@ -17,8 +17,7 @@ namespace Sapper_Game
 {
     /// <summary>
     /// Logika interakcji dla klasy MainWindow.xaml
-    /// </summary>
-    /// //HERE WILL BE GREAT CODE SUPPER GAME
+    /// </summary>   
     /// Still working with my colleagues on a code conversion to given guidelines!
     public partial class MainWindow : Window
     {
