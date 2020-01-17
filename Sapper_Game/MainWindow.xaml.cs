@@ -16,9 +16,7 @@ using System.Windows.Shapes;
 namespace Sapper_Game
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
-    /// </summary>   
-    /// Still working with my colleagues on a code conversion to given guidelines!
+   
     public partial class MainWindow : Window
     {
         public MainWindow()
