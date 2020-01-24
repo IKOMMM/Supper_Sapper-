@@ -4,11 +4,11 @@ namespace Minesweeper.WPF
 {
     public interface IGame
     {
-        //events associated with the Game
+        //działania zawarte w rozgrywce! 
         event EventHandler CounterChanged;
         event EventHandler TimerThresholdReached;
         event EventHandler<PlateEventArgs> ClickPlate;
 
-        void Run(); // gra musi działać!
+        void Run(); //wymaganie działania gry!
     }
 }

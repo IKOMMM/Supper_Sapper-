@@ -178,5 +178,10 @@ namespace Minesweeper.WPF
             // calls respecive "Button Click" event handler 
             this.Button_Click(senderButton, new RoutedEventArgs());
         }
+
+        private void MinesIndicator_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

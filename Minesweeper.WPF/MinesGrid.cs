@@ -5,12 +5,12 @@ namespace Minesweeper.WPF
 {
     public class MinesGrid : IGame
     {
-        //events associated with an EventHandler delegates
+        //eventy powiązoane z delegatami EventHandler
         public event EventHandler CounterChanged;
         public event EventHandler TimerThresholdReached;
         public event EventHandler<PlateEventArgs> ClickPlate;
         
-        //fields/properties
+        //pola/właściwości
         public int Width { get; private set; }
         public int Height { get; private set; }
         public int Mines { get; private set; }
@@ -21,20 +21,20 @@ namespace Minesweeper.WPF
         public int FlaggedMines { get { return (this.correctFlags + this.wrongFlags); } }
         private DispatcherTimer gameTimer; 
 
-        //constructor
+        //konstruktor
         public MinesGrid(int width, int height, int mines)
         {
             this.Width = width;
             this.Height = height;
             this.Mines = mines;
         }
-        //method to check if the current position is inside the grid
+        //metoda sprawdzająca czy obecna pozycja zawiera się w grid'zie
         public bool IsInGrid(int rowPosition, int colPosition)
         {
             return ((rowPosition >= 0) && (rowPosition < this.Width) && (colPosition >= 0) && (colPosition < this.Height));
         }
 
-        //method to check if the current position is mined
+        //metoda sprawdzająca czy pole zawiera bombe
         public bool IsBomb(int rowPosition, int colPosition)
         {
             if (this.IsInGrid(rowPosition, colPosition))
@@ -44,7 +44,7 @@ namespace Minesweeper.WPF
             return false;
         }
 
-        //method to check if the current position is mined
+        //metoda sprawdza czy obecna pozycja zawiera flage
         public bool IsFlagged(int rowPosition, int colPosition)
         {
             if (this.IsInGrid(rowPosition, colPosition))
@@ -53,20 +53,21 @@ namespace Minesweeper.WPF
             }
             return false;
         }
-        //method to determine the current cell's status
-        //it redirect to Plate.Check() to determine if the cell is mined, or how many mines are around it
+        //metoda definiująca obecny status pola
+        //wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
+               
         public int RevealPlate(int rowPosition, int colPosition)
         {
             if (this.IsInGrid(rowPosition, colPosition))
             {
-                int result = this.plates[rowPosition, colPosition].Check(); // checks for number of surrounding mines
-                CheckFinish(); // checks for end of game
+                int result = this.plates[rowPosition, colPosition].Check(); //sprawdza numer min do okoła
+                CheckFinish(); //sprawdza czy koniec gry
                 return result;
             }
             throw new MinesweeperException("Invalid MinesGrid reference call [row, column] on reveal");
         }
 
-        //method to put or remove flag if some cell is selected
+        //metoda do stawiania i usuwania flag po zaznaczeniu
         public void FlagMine(int rowPosition, int colPosition)
         {
             if (!this.IsInGrid(rowPosition, colPosition))
@@ -98,44 +99,44 @@ namespace Minesweeper.WPF
                 }
             }
 
-            currPlate.IsFlagged = !currPlate.IsFlagged; // updates the flagged value
-            CheckFinish(); // checks for end of game
-            // Raises CounterChanged event 
+            currPlate.IsFlagged = !currPlate.IsFlagged; //wartości flag
+            CheckFinish(); // sprawdza za końcem gry
+            //zmiana w wyniku
             this.OnCounterChanged(new EventArgs());
         }
 
-        //method to open an exact single plate
+        //metoda do otwierania pojedynczej komórki
         public void OpenPlate(int rowPosition, int colPosition)
         {
-            // Checks if the plate is not revealed already
+            //sprawdza czy ta komórka nie zostałą już "otwarta"
             if (this.IsInGrid(rowPosition, colPosition) && !this.plates[rowPosition, colPosition].IsRevealed)
             {
-                // then Raises ClickPlate event with plate position data  
+                //po czym wywołuje ClickPlate z informacją o komórce
                 this.OnClickPlate(new PlateEventArgs(rowPosition, colPosition));
             }
         }
 
-        //method to check if the board is fully resolved
+        //metoda sprawdzająca czy cała plansza jest już rozwiązana
         private void CheckFinish()
         {
-            bool hasFinished = false; // assumes that the game is not finished
-            if (this.wrongFlags == 0 && this.FlaggedMines == this.Mines) // we have zero more flags to put
+            bool hasFinished = false; //sprawdza czy nie jest jeszcze skończona
+            if (this.wrongFlags == 0 && this.FlaggedMines == this.Mines) //nie mamy flag do położenia
             {
-                hasFinished = true; // assumes that all plates are revealed
+                hasFinished = true; //sprawdza czy wszystkie są odkryte
                 foreach (Plate item in this.plates)
                 {
                     if (!item.IsRevealed && !item.IsMined)
                     {
-                        hasFinished = false; // if a plate is not revealed than the game is not finished
+                        hasFinished = false; //jeżeli wszystkie komórki są nie otwarte gra nie jest skończona
                         break;
                     }
                 }
             }
 
-            if (hasFinished) gameTimer.Stop(); // when the game has finished the timer must be stopped immediately
+            if (hasFinished) gameTimer.Stop(); //gdy gra jest skończona timer stop
         }
 
-        //method to create a game
+        //metoda do stworzenia gry
         public void Run()
         {
             this.correctFlags = 0;
@@ -176,13 +177,13 @@ namespace Minesweeper.WPF
             gameTimer.Start();            
         }
 
-        // method to stop the game
+        //metoda do zatrzymania gry
         public void Stop()
         {
             gameTimer.Stop();
         }
 
-        // "Flag Counter Changed" Event Raiser
+        //Zmiana w zakresie użytyuch flag
         protected virtual void OnCounterChanged(EventArgs e)
         {
             EventHandler handler = CounterChanged;
@@ -192,7 +193,7 @@ namespace Minesweeper.WPF
             }
         }
 
-        // "Time Counter Changed" Event Raiser
+        //Zmiana licznika czasu
         protected virtual void OnTimeElapsed(object sender, EventArgs e)
         {
             this.TimeElapsed++;
@@ -202,8 +203,8 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
-
-        // "Click to Reveal Plate" Event Raiser - used to automatically open all empty plates in a region
+        
+        // Kliknięcie do otwarcia pojedynczej komórki - automatyczne by otworzyć wszystkie puste komórki w okolicy tej pojedynczej
         protected virtual void OnClickPlate(PlateEventArgs e)
         {
             EventHandler<PlateEventArgs> handler = ClickPlate;
