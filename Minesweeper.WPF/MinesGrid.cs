@@ -213,5 +213,11 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
+        public void NoMines() {
+            if (Mines<=0) {
+                Console.Write("No mines");
+            }
+
+        }
     }
 }
