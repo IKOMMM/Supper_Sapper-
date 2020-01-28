@@ -20,7 +20,8 @@ namespace Minesweeper.WPF
         private int correctFlags;
         private int wrongFlags;
         public int FlaggedMines { get { return (this.correctFlags + this.wrongFlags); } }
-        private DispatcherTimer gameTimer; 
+        private DispatcherTimer gameTimer;
+        public static int lc = 0;
 
         //konstruktor
         public MinesGrid(int width, int height, int mines)
@@ -222,6 +223,7 @@ namespace Minesweeper.WPF
         }
         public void NoMines()
         {
+            
             string win = "You win";
 
             string lose = "You lose";
@@ -239,7 +241,9 @@ namespace Minesweeper.WPF
                 
             }
             if (losed == true) {
-                MessageBox.Show(lose);
+                if (lc == 0) { 
+                    MessageBox.Show(lose); }
+                lc++;
             }
             else if (winn ==true)
             {

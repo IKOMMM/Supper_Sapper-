@@ -33,6 +33,7 @@ namespace Minesweeper.WPF
         private void MenuItem_Click_New(object sender, RoutedEventArgs e)
         {
             GameSetup();
+            MinesGrid.lc = 0;
         }
 
         private void GameSetup()
