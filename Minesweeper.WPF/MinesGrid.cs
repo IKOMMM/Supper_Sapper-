@@ -225,14 +225,26 @@ namespace Minesweeper.WPF
             string win = "You win";
 
             string lose = "You lose";
+            bool losed = false;
+            bool winn = false;
             if (this.Mines == 0)
+            {
+                winn = true;
+                losed = false ;
+
+            }
+            else {
+                losed = true;
+                winn = false;
+                
+            }
+            if (losed == true) {
+                MessageBox.Show(lose);
+            }
+            else if (winn ==true)
             {
                 MessageBox.Show(win);
             }
-            else {
-                MessageBox.Show(lose);
-            }
-
         }
     }
 }
