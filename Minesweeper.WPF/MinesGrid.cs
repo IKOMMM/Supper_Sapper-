@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using System.Windows.Threading;
 
 namespace Minesweeper.WPF
@@ -100,7 +101,9 @@ namespace Minesweeper.WPF
             }
 
             currPlate.IsFlagged = !currPlate.IsFlagged; //wartości flag
+    
             CheckFinish(); // sprawdza za końcem gry
+
             //zmiana w wyniku
             this.OnCounterChanged(new EventArgs());
         }
@@ -180,7 +183,11 @@ namespace Minesweeper.WPF
         //metoda do zatrzymania gry
         public void Stop()
         {
+
+
             gameTimer.Stop();
+            NoMines();
+
         }
 
         //Zmiana w zakresie użytyuch flag
@@ -213,9 +220,17 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
-        public void NoMines() {
-            if (Mines<=0) {
-                Console.Write("No mines");
+        public void NoMines()
+        {
+            string win = "You win";
+
+            string lose = "You lose";
+            if (this.Mines == 0)
+            {
+                MessageBox.Show(win);
+            }
+            else {
+                MessageBox.Show(lose);
             }
 
         }

@@ -100,7 +100,7 @@ namespace Minesweeper.WPF
             }
             else // an empty space was revealed
             {
-                int count = Mines.RevealPlate(row, col); // opens the plate and checks for surrounding bombs
+                int count = Mines.RevealPlate(row, col); // opens the plate     and checks for surrounding bombs
                 if (count > 0) // put a corresponding label on the current button
                 {
                     btn.Foreground = new SolidColorBrush(mineText[count]);
