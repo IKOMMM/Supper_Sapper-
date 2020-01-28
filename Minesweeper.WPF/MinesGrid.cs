@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -182,7 +183,7 @@ namespace Minesweeper.WPF
         }
 
         //metoda do zatrzymania gry
-        public void Stop()
+        public async Task Stop()
         {
 
 
@@ -221,7 +222,7 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
-        public void NoMines()
+        public async Task NoMines()
         {
             
             string win = "You win";
@@ -241,11 +242,12 @@ namespace Minesweeper.WPF
                 
             }
             if (losed == true) {
-                if (lc == 0) { 
+                if (lc == 0) {
+                    await Task.Run(() => lc++);
                     MessageBox.Show(lose); }
-                lc++;
+                ;
             }
-            else if (winn ==true)
+            else if (winn == true)
             {
                 MessageBox.Show(win);
             }
