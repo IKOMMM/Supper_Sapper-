@@ -70,6 +70,11 @@ namespace Minesweeper.WPF
             Application.Current.Shutdown(); // closes application
         }
 
+        /// <summary>
+        /// Określa co sie dzieje z polem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender; // gets clicked button reference
@@ -116,7 +121,11 @@ namespace Minesweeper.WPF
                 }
             }
         }
-
+        /// <summary>
+        /// Prawy klick na polu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Right_Button_Click(object sender, MouseButtonEventArgs e)
         {
             Button btn = (Button)sender; // gets clicked button reference

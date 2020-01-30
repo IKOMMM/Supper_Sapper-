@@ -15,8 +15,10 @@ namespace Minesweeper.WPF
         public event EventHandler CounterChanged;
         public event EventHandler TimerThresholdReached;
         public event EventHandler<PlateEventArgs> ClickPlate;
-        
-        //pola/właściwości
+        /// <summary>
+        /// pola/właściwości
+        /// </summary>
+        //
         public int Width { get; private set; }
         public int Height { get; private set; }
         public int Mines { get; private set; }
@@ -27,21 +29,37 @@ namespace Minesweeper.WPF
         public int FlaggedMines { get { return (this.correctFlags + this.wrongFlags); } }
         private DispatcherTimer gameTimer;
         public static int lc = 0;
-
-        //konstruktor
+        /// <summary>
+        /// konstruktor
+        /// </summary>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <param name="mines"></param>
+        //
         public MinesGrid(int width, int height, int mines)
         {
             this.Width = width;
             this.Height = height;
             this.Mines = mines;
         }
-        //metoda sprawdzająca czy obecna pozycja zawiera się w grid'zie
+        /// <summary>
+        /// metoda sprawdzająca czy obecna pozycja zawiera się w grid'zie
+        /// </summary>
+        /// <param name="rowPosition"></param>
+        /// <param name="colPosition"></param>
+        /// <returns></returns>
+        //
         public bool IsInGrid(int rowPosition, int colPosition)
         {
             return ((rowPosition >= 0) && (rowPosition < this.Width) && (colPosition >= 0) && (colPosition < this.Height));
         }
-
-        //metoda sprawdzająca czy pole zawiera bombe
+        /// <summary>
+        /// metoda sprawdzająca czy pole zawiera bombę
+        /// </summary>
+        /// <param name="rowPosition"></param>
+        /// <param name="colPosition"></param>
+        /// <returns></returns>
+        //
         public bool IsBomb(int rowPosition, int colPosition)
         {
             if (this.IsInGrid(rowPosition, colPosition))
@@ -50,8 +68,12 @@ namespace Minesweeper.WPF
             }
             return false;
         }
-
-        //metoda sprawdza czy obecna pozycja zawiera flage
+        /// <summary>
+        /// metoda sprawdza czy obecna pozycja zawiera flage
+        /// </summary>
+        /// <param name="rowPosition"></param>
+        /// <param name="colPosition"></param>
+        /// <returns></returns>
         public bool IsFlagged(int rowPosition, int colPosition)
         {
             if (this.IsInGrid(rowPosition, colPosition))
@@ -61,12 +83,8 @@ namespace Minesweeper.WPF
             return false;
         }
         /// <summary>
-        /// 
-
-
-
-        ///metoda definiująca obecny status pola
-        ///wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
+        
+        ///metoda definiująca obecny status pola wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
         /// </summary>
         public int RevealPlate(int rowPosition, int colPosition)
         {

@@ -10,8 +10,10 @@ namespace Minesweeper.WPF
     /// </summary>
     public class Plate : IPlate
     {
-
-        //automatyczne właściwości pól
+        /// <summary>
+        /// automatyczne właściwości pól
+        /// </summary>
+        //
         public MinesGrid GameGrid { get; private set; }
         public int RowPosition { get; private set; }
         public int ColPosition { get; private set; }
