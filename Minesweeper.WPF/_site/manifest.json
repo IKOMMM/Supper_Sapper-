@@ -1,0 +1,222 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Bartek/Supper_Sapper-/Minesweeper.WPF",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "370bAenx948+lK0lzcRIlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "y5eLh+V8G8FHNqDRnP9/7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "LYAltBlBS2SR+J1vjiMfNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.App.html",
+          "hash": "AwEehPOnLlkFnIppTQW17w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.IGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.IGame.html",
+          "hash": "G3aWUXaJHOqXe8GtMEpqZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.MainWindow.html",
+          "hash": "hY/Mvoq8wTnSitHKkq76/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.MinesGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.MinesGrid.html",
+          "hash": "RtE7VzapaQAkbVKVS01lNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.MinesweeperException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.MinesweeperException.html",
+          "hash": "BAFiZ8byz3CXmg/brFO0rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.Plate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.Plate.html",
+          "hash": "P8cs67zXOIy5My8QpiJ1lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.PlateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.PlateEventArgs.html",
+          "hash": "6C9CRlb1ysMBenwlIZQiGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Minesweeper.WPF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Minesweeper.WPF.html",
+          "hash": "G7xl/g4pK+6KdwuuoBV6hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "LkiCDIV1TM+m9h1iA8+s7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 6
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

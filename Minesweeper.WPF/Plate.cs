@@ -1,7 +1,13 @@
 ﻿using System;
 
 namespace Minesweeper.WPF
+
 {
+
+
+    /// <summary>
+    ///Tworzy plansze
+    /// </summary>
     public class Plate : IPlate
     {
 
@@ -21,8 +27,13 @@ namespace Minesweeper.WPF
             this.ColPosition = colPosition;
         }
 
-        //metoda do liczenia min do okoła pojedynczego pola, wyświetla również numer bomb do okoła
-        //w przypadku jak nie ma min do okoła to metoda MinesGrid.RevealPlate sprawdzi gdzie są najbliższe        
+
+
+        /// <summary>
+        /// metoda do liczenia min do okoła pojedynczego pola, wyświetla również numer bomb do okoła
+        ///w przypadku jak nie ma min do okoła to metoda MinesGrid.RevealPlate sprawdzi gdzie są najbliższe
+        /// </summary>
+
         public int Check()
         {
             int counter = 0;

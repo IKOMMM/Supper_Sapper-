@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 namespace Minesweeper.WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Metoda logiczna dla MainWindow.xaml, definiujemy kliki i ich logike
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -30,12 +30,18 @@ namespace Minesweeper.WPF
             GameSetup();
         }
 
+   
         private void MenuItem_Click_New(object sender, RoutedEventArgs e)
         {
             GameSetup();
             MinesGrid.lc = 0;
         }
 
+
+
+        /// <summary>
+        /// Ustawienia gry
+        /// </summary>
         private void GameSetup()
         {
             Mines = new MinesGrid(10, 10, nrMines);

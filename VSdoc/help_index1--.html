@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Index</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<style>
+		html,body {
+			margin: 0; padding: 0px;
+			height:100%; 
+			min-height:100%;
+			background-color: rgb(233,232,220);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: black;
+		}
+
+		body {font-size:75%;position:relative; margin-top:-1px; border-style: solid solid solid solid;	border-color: rgb(172,168,153);	border-width: 0px 0px 1px 0px;}
+		a { text-decoration:none; color:#06c }
+		form {padding:5px; margin:0px;}
+	</style>
+
+ <link rel="stylesheet" type="text/css" href="vsdocman_overrides.css"></link> 
+</head>
+<body style="direction: ltr;">
+	<form>
+	Look for:<br /><input style="width:100%" onKeyDown="check_input(this.value,get_match)" onKeyUp="check_input(this.value,get_match)"/>
+	</form>
+
+	<script>
+		var words = new Array(
+"App Class","Check Method","ClickPlate Event {Minesweeper.WPF.IGame}","ClickPlate Event {Minesweeper.WPF.MinesGrid}","ColPosition Property","CounterChanged Event {Minesweeper.WPF.IGame}","CounterChanged Event {Minesweeper.WPF.MinesGrid}","FlagMine Method","FlaggedMines Property","GameGrid Property","Height Property","IGame Interface","IsBomb Method","IsFlagged Method","IsFlagged Property","IsInGrid Method","IsMined Property","IsRevealed Property","MainWindow Class","MainWindow Constructor","Mines Property {Minesweeper.WPF.MainWindow}","Mines Property {Minesweeper.WPF.MinesGrid}","MinesGrid Class","MinesGrid Constructor","Minesweeper.WPF Namespace","Minesweeper.WPF Reference","MinesweeperException (String) Constructor","MinesweeperException (String, Exception) Constructor","MinesweeperException Class","NoMines Method","OnClickPlate Method","OnCounterChanged Method","OnTimeElapsed Method","OpenPlate Method","Plate Class","Plate Constructor","PlateColumn Property","PlateEventArgs Class","PlateEventArgs Constructor","PlateRow Property","RevealPlate Method","RowPosition Property","Run Method {Minesweeper.WPF.IGame}","Run Method {Minesweeper.WPF.MinesGrid}","Stop Method","TimeElapsed Property","TimerThresholdReached Event {Minesweeper.WPF.IGame}","TimerThresholdReached Event {Minesweeper.WPF.MinesGrid}","Width Property","lc Field"
+		);
+		
+		
+		var oldHighlight = 0;
+		var oldKey = "";
+		
+		function get_match(text) {
+		    var ltext = text.toLowerCase();
+		    for(i in words) {
+		        if(words[i].toLowerCase().indexOf(ltext) == "0") {
+		            return words[i];
+		        }
+		    }
+		    return "";
+		}
+		
+		function highlight(keyword) {
+		    if(oldHighlight) oldHighlight.className = "";
+		    var el = parent.frames['zindex'].document.getElementById("w_"+keyword);
+		    el.className="highlighted";
+		    oldHighlight = el;
+		}
+		
+		function check_input(text, matchfun) {
+		    if(text!=oldKey) {
+		        var keyword = matchfun(text);
+		        if(keyword) {       
+		            highlight(keyword);
+		            parent.frames['zindex'].document.getElementById('w_'+keyword).scrollIntoView();
+		        }
+		        oldKey = text;
+		    }
+		}
+	</script>
+</body>
+</html>
+

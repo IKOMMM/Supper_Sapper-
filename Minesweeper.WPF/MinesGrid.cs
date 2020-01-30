@@ -5,6 +5,10 @@ using System.Windows.Threading;
 
 namespace Minesweeper.WPF
 {
+
+    /// <summary>
+    /// Zarządzanie minami
+    /// </summary>
     public class MinesGrid : IGame
     {
         //eventy powiązoane z delegatami EventHandler
@@ -56,9 +60,14 @@ namespace Minesweeper.WPF
             }
             return false;
         }
-        //metoda definiująca obecny status pola
-        //wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
-               
+        /// <summary>
+        /// 
+
+
+
+        ///metoda definiująca obecny status pola
+        ///wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
+        /// </summary>
         public int RevealPlate(int rowPosition, int colPosition)
         {
             if (this.IsInGrid(rowPosition, colPosition))
@@ -69,8 +78,11 @@ namespace Minesweeper.WPF
             }
             throw new MinesweeperException("Invalid MinesGrid reference call [row, column] on reveal");
         }
+        /// <summary>
+        /// metoda do stawiania i usuwania flag po zaznaczeniu
+        /// </summary>
 
-        //metoda do stawiania i usuwania flag po zaznaczeniu
+        //
         public void FlagMine(int rowPosition, int colPosition)
         {
             if (!this.IsInGrid(rowPosition, colPosition))
@@ -109,8 +121,10 @@ namespace Minesweeper.WPF
             //zmiana w wyniku
             this.OnCounterChanged(new EventArgs());
         }
-
-        //metoda do otwierania pojedynczej komórki
+        ///<summary>
+        ///metoda do otwierania pojedynczej komórki
+        ///</summary>
+        
         public void OpenPlate(int rowPosition, int colPosition)
         {
             //sprawdza czy ta komórka nie zostałą już "otwarta"
@@ -120,8 +134,10 @@ namespace Minesweeper.WPF
                 this.OnClickPlate(new PlateEventArgs(rowPosition, colPosition));
             }
         }
-
-        //metoda sprawdzająca czy cała plansza jest już rozwiązana
+        /// <summary>
+        /// metoda sprawdzająca czy cała plansza jest już rozwiązana
+        /// </summary>
+        //
         private void CheckFinish()
         {
             bool hasFinished = false; //sprawdza czy nie jest jeszcze skończona
@@ -146,6 +162,10 @@ namespace Minesweeper.WPF
            }
 
         //metoda do stworzenia gry
+
+        /// <summary>
+        /// Rozpoczęcie gry
+        /// </summary>
         public void Run()
         {
             this.correctFlags = 0;
@@ -187,6 +207,10 @@ namespace Minesweeper.WPF
         }
 
         //metoda do zatrzymania gry
+
+        /// <summary>
+        /// Zatrzymanie zegara
+        /// </summary>
         public async Task Stop()
         {
 
@@ -197,6 +221,10 @@ namespace Minesweeper.WPF
         }
 
         //Zmiana w zakresie użytyuch flag
+
+        /// <summary>
+        /// Licznik Flag
+        /// </summary>
         protected virtual void OnCounterChanged(EventArgs e)
         {
             EventHandler handler = CounterChanged;
@@ -216,8 +244,10 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
+        ///<summary>
+        ///Kliknięcie do otwarcia pojedynczej komórki - automatyczne by otworzyć wszystkie puste komórki w okolicy tej pojedynczej
+        ///</summary>
         
-        // Kliknięcie do otwarcia pojedynczej komórki - automatyczne by otworzyć wszystkie puste komórki w okolicy tej pojedynczej
         protected virtual void OnClickPlate(PlateEventArgs e)
         {
             EventHandler<PlateEventArgs> handler = ClickPlate;
@@ -226,6 +256,10 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
+
+        /// <summary>
+        /// Metoda sprawdzająca czy wygraliśmy czy przegraliśmy
+        /// </summary>
         public async Task NoMines(bool winner)
         {
             

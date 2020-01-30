@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="Minesweeper" Title="Minesweeper.WPF Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.App" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000001.html" LinkGroup="Minesweeper">App Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.Check" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000002C.html" LinkGroup="Minesweeper">Check Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.IGame.ClickPlate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000005.html" LinkGroup="Minesweeper">ClickPlate Event {Minesweeper.WPF.IGame}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.ClickPlate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000000D.html" LinkGroup="Minesweeper">ClickPlate Event {Minesweeper.WPF.MinesGrid}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.ColPosition" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000027.html" LinkGroup="Minesweeper">ColPosition Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.IGame.CounterChanged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000003.html" LinkGroup="Minesweeper">CounterChanged Event {Minesweeper.WPF.IGame}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.CounterChanged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000000B.html" LinkGroup="Minesweeper">CounterChanged Event {Minesweeper.WPF.MinesGrid}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.FlagMine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000019.html" LinkGroup="Minesweeper">FlagMine Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.FlaggedMines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000012.html" LinkGroup="Minesweeper">FlaggedMines Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.GameGrid" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000025.html" LinkGroup="Minesweeper">GameGrid Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.Height" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000000F.html" LinkGroup="Minesweeper">Height Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.IGame" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000002.html" LinkGroup="Minesweeper">IGame Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.IsBomb" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000016.html" LinkGroup="Minesweeper">IsBomb Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.IsFlagged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000017.html" LinkGroup="Minesweeper">IsFlagged Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.IsFlagged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000028.html" LinkGroup="Minesweeper">IsFlagged Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.IsInGrid" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000015.html" LinkGroup="Minesweeper">IsInGrid Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.IsMined" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000029.html" LinkGroup="Minesweeper">IsMined Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.IsRevealed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000002A.html" LinkGroup="Minesweeper">IsRevealed Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MainWindow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000007.html" LinkGroup="Minesweeper">MainWindow Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MainWindow.MainWindow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000009.html" LinkGroup="Minesweeper">MainWindow Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MainWindow.Mines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000008.html" LinkGroup="Minesweeper">Mines Property {Minesweeper.WPF.MainWindow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.Mines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000010.html" LinkGroup="Minesweeper">Mines Property {Minesweeper.WPF.MinesGrid}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000000A.html" LinkGroup="Minesweeper">MinesGrid Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.MinesGrid" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000014.html" LinkGroup="Minesweeper">MinesGrid Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000000.html" LinkGroup="Minesweeper">Minesweeper.WPF Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000032.html" LinkGroup="Minesweeper">Minesweeper.WPF Reference</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesweeperException.MinesweeperException" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000022_overloads--.html" LinkGroup="Minesweeper">MinesweeperException Constructor</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesweeperException.MinesweeperException" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000023_overloads--.html" LinkGroup="Minesweeper">MinesweeperException Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesweeperException" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000021.html" LinkGroup="Minesweeper">MinesweeperException Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.NoMines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000020.html" LinkGroup="Minesweeper">NoMines Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.OnClickPlate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000001F.html" LinkGroup="Minesweeper">OnClickPlate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.OnCounterChanged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000001D.html" LinkGroup="Minesweeper">OnCounterChanged Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.OnTimeElapsed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000001E.html" LinkGroup="Minesweeper">OnTimeElapsed Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.OpenPlate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000001A.html" LinkGroup="Minesweeper">OpenPlate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000024.html" LinkGroup="Minesweeper">Plate Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.Plate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000002B.html" LinkGroup="Minesweeper">Plate Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.PlateEventArgs.PlateColumn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000002F.html" LinkGroup="Minesweeper">PlateColumn Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.PlateEventArgs" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000002D.html" LinkGroup="Minesweeper">PlateEventArgs Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.PlateEventArgs.PlateEventArgs" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000030.html" LinkGroup="Minesweeper">PlateEventArgs Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.PlateEventArgs.PlateRow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000002E.html" LinkGroup="Minesweeper">PlateRow Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.RevealPlate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000018.html" LinkGroup="Minesweeper">RevealPlate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.Plate.RowPosition" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000026.html" LinkGroup="Minesweeper">RowPosition Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.IGame.Run" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000006.html" LinkGroup="Minesweeper">Run Method {Minesweeper.WPF.IGame}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.Run" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000001B.html" LinkGroup="Minesweeper">Run Method {Minesweeper.WPF.MinesGrid}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.Stop" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000001C.html" LinkGroup="Minesweeper">Stop Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.TimeElapsed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000011.html" LinkGroup="Minesweeper">TimeElapsed Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.IGame.TimerThresholdReached" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000004.html" LinkGroup="Minesweeper">TimerThresholdReached Event {Minesweeper.WPF.IGame}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.TimerThresholdReached" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000000C.html" LinkGroup="Minesweeper">TimerThresholdReached Event {Minesweeper.WPF.MinesGrid}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.Width" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_000000000000000E.html" LinkGroup="Minesweeper">Width Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Minesweeper.WPF.MinesGrid.lc" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Minesweeper.chm::/topic_0000000000000013.html" LinkGroup="Minesweeper">lc Field</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+
