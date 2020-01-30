@@ -138,8 +138,12 @@ namespace Minesweeper.WPF
                 }
             }
 
-            if (hasFinished) gameTimer.Stop(); //gdy gra jest skończona timer stop
-        }
+            if (hasFinished)
+            {
+                gameTimer.Stop(); //gdy gra jest skończona timer stop
+                NoMines(true);
+            }
+           }
 
         //metoda do stworzenia gry
         public void Run()
@@ -188,7 +192,7 @@ namespace Minesweeper.WPF
 
 
             gameTimer.Stop();
-            NoMines();
+            NoMines(false);
 
         }
 
@@ -222,32 +226,20 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
-        public async Task NoMines()
+        public async Task NoMines(bool winner)
         {
             
             string win = "You win";
 
             string lose = "You lose";
-            bool losed = false;
-            bool winn = false;
-            if (this.Mines == 0)
-            {
-                winn = true;
-                losed = false ;
-
-            }
-            else {
-                losed = true;
-                winn = false;
-                
-            }
-            if (losed == true) {
+           
+            if (winner == false) {
                 if (lc == 0) {
                     await Task.Run(() => lc++);
                     MessageBox.Show(lose); }
                 ;
             }
-            else if (winn == true)
+            else if (winner == true)
             {
                 MessageBox.Show(win);
             }
