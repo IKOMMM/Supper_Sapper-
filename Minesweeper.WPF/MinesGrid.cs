@@ -16,7 +16,7 @@ namespace Minesweeper.WPF
         public event EventHandler TimerThresholdReached;
         public event EventHandler<PlateEventArgs> ClickPlate;
         /// <summary>
-        /// pola/właściwości
+        /// Pola/właściwości
         /// </summary>
         //
         public int Width { get; private set; }
@@ -30,7 +30,7 @@ namespace Minesweeper.WPF
         private DispatcherTimer gameTimer;
         public static int lc = 0;
         /// <summary>
-        /// konstruktor
+        /// Konstruktor
         /// </summary>
         /// <param name="width"></param>
         /// <param name="height"></param>
@@ -43,7 +43,7 @@ namespace Minesweeper.WPF
             this.Mines = mines;
         }
         /// <summary>
-        /// metoda sprawdzająca czy obecna pozycja zawiera się w grid'zie
+        /// Metoda sprawdzająca czy obecna pozycja zawiera się w grid'zie
         /// </summary>
         /// <param name="rowPosition"></param>
         /// <param name="colPosition"></param>
@@ -54,7 +54,7 @@ namespace Minesweeper.WPF
             return ((rowPosition >= 0) && (rowPosition < this.Width) && (colPosition >= 0) && (colPosition < this.Height));
         }
         /// <summary>
-        /// metoda sprawdzająca czy pole zawiera bombę
+        /// Metoda sprawdzająca czy pole zawiera bombę
         /// </summary>
         /// <param name="rowPosition"></param>
         /// <param name="colPosition"></param>
@@ -69,7 +69,7 @@ namespace Minesweeper.WPF
             return false;
         }
         /// <summary>
-        /// metoda sprawdza czy obecna pozycja zawiera flage
+        /// Metoda sprawdza czy obecna pozycja zawiera flage
         /// </summary>
         /// <param name="rowPosition"></param>
         /// <param name="colPosition"></param>
@@ -84,7 +84,7 @@ namespace Minesweeper.WPF
         }
         /// <summary>
         
-        ///metoda definiująca obecny status pola wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
+        ///Metoda definiująca obecny status pola wymaga od Plate.Check() określenia czy pole jest zaminowane oraz ile min jest wokoło
         /// </summary>
         public int RevealPlate(int rowPosition, int colPosition)
         {
@@ -97,7 +97,7 @@ namespace Minesweeper.WPF
             throw new MinesweeperException("Invalid MinesGrid reference call [row, column] on reveal");
         }
         /// <summary>
-        /// metoda do stawiania i usuwania flag po zaznaczeniu
+        /// Metoda do stawiania i usuwania flag po zaznaczeniu
         /// </summary>
 
         //
@@ -140,7 +140,7 @@ namespace Minesweeper.WPF
             this.OnCounterChanged(new EventArgs());
         }
         ///<summary>
-        ///metoda do otwierania pojedynczej komórki
+        ///Metoda do otwierania pojedynczej komórki
         ///</summary>
         
         public void OpenPlate(int rowPosition, int colPosition)
@@ -153,7 +153,7 @@ namespace Minesweeper.WPF
             }
         }
         /// <summary>
-        /// metoda sprawdzająca czy cała plansza jest już rozwiązana
+        /// Metoda sprawdzająca czy cała plansza jest już rozwiązana
         /// </summary>
         //
         private void CheckFinish()
@@ -251,8 +251,12 @@ namespace Minesweeper.WPF
                 handler(this, e);
             }
         }
-
-        //Zmiana licznika czasu
+        /// <summary>
+        /// Zmiana licznika czasu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        //
         protected virtual void OnTimeElapsed(object sender, EventArgs e)
         {
             this.TimeElapsed++;
@@ -281,9 +285,9 @@ namespace Minesweeper.WPF
         public async Task NoMines(bool winner)
         {
             
-            string win = "You win";
+            string win = "Wygrana!";
 
-            string lose = "You lose";
+            string lose = "Przegrana!";
            
             if (winner == false) {
                 if (lc == 0) {
