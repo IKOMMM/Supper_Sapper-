@@ -4,7 +4,8 @@ namespace Minesweeper.WPF
 {
     interface IPlate
     {
-        // gettery pól (muszą posiadać swoje gettery)
+        // gettery (muszą posiadać swoje gettery) 
+
         /// <summary>
         /// Gettery i settery do planszy
         /// </summary>
